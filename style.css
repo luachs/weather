@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(./img/cold.jpg) no-repeat center/cover;
+}
+.hot {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(./img/hot.jpg) no-repeat center/cover;
+}
+.hot .weather {
+  background: url(./img/hot.jpg) no-repeat center/cover;
+}
+.warm {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(./img/warm.jpg) no-repeat center/cover;
+}
+.warm .weather {
+  background: url(./img/warm.jpg) no-repeat center/cover;
+}
+.cool {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(./img/cool.jpg) no-repeat center/cover;
+}
+.cool .weather {
+  background: url(./img/cool.jpg) no-repeat center/cover;
+}
+.cold {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(./img/cold.jpg) no-repeat center/cover;
+}
+.cold .weather {
+  background: url(./img/cold.jpg) no-repeat center/cover;
+}
+.weather {
+  width: 400px;
+  border-radius: 10px;
+  background: url(./img/cold.jpg) no-repeat center/cover;
+  padding: 30px 20px;
+}
+.weather .input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0 15px 0 15px;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px rgb(68, 105, 132);
+  color: aliceblue;
+  transition: 0.3s;
+}
+.weather .input:focus {
+  border-radius: 15px 0 15px 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+.capital {
+  font-size: 35px;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 6px 3px 6px black;
+}
+.content {
+  padding-top: 20px;
+  transition: 10s;
+}
+.time {
+  color: rgb(0, 0, 0);
+  margin-top: 5px;
+  text-align: center;
+}
+.temperature {
+  color: aliceblue;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 70px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 3px 5px black;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+.short-desc {
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+.eye,
+.wind,
+.cloud {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+.more-desc {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.more-desc span,
+i {
+  text-align: center;
+  margin-top: 8px;
+}
+.hide {
+  visibility: hidden;
+  opacity: 0;
+}
